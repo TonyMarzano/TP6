@@ -1,5 +1,6 @@
 # TP6
 Repo para entregar del TP6, contiene un Dockerfile y archivos html,css,js que serán utilizados al momento de levantar un contenedor
+Se debería clonar el repositorio y con los archivos clonador ejecutar los comandos que se ven abajo:
 
 
 -crea una imagen de Docker a partir de este Dockerfile ejecutando el siguiente comando en el directorio donde tengas los archivos mencionados:
@@ -7,6 +8,8 @@ Repo para entregar del TP6, contiene un Dockerfile y archivos html,css,js que se
 
 -Una vez que la imagen esté construida, puedes ejecutar el siguiente comando para crear un contenedor basado en esa imagen:
   docker run -d -p 80:80 --name contenedor_v3 -v /mnt/c/Users/Marzano.S100/Desktop/BootCampDevops/TP6-BOOTCAMP:/var/www/html santinotona/tp6:v3
+Al entrar en cualquier navegador a localhost:8080 se debería ver un sitio web, estilo portafolio.
+
 
 -Luego, puedes subir la imagen a DockerHub con el siguiente comando:
     docker push santinotona/tp6:v3
